@@ -4,7 +4,7 @@
         <ImplicitUsings>disable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <PackageLicenseFile>COPYING.LESSER</PackageLicenseFile>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <Title>WCount.Library</Title>
         <Authors>AlastairLundy</Authors>
@@ -21,9 +21,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Content Include="..\LICENSE.txt">
-            <Link>LICENSE.txt</Link>
-            <PackagePath>LICENSE.txt</PackagePath>
+        <Content Include="..\COPYING.LESSER">
+            <Link>COPYING.LESSER</Link>
+            <PackagePath>COPYING.LESSER</PackagePath>
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
