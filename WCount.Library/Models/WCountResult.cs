@@ -18,6 +18,7 @@
 using System;
 
 namespace WCount.Library.Models;
+
     public class WCountResult
     {
         public ulong WordCount { get; set; }
