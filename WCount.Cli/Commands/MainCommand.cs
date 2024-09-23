@@ -99,11 +99,11 @@ public class MainCommand : Command<MainCommand.Settings>
                     grid.AddColumn();
                     grid.AddColumn();
 
-                    ulong totalLines = 0;
+                    int totalLines = 0;
                     
                     foreach (string file in settings.Files!)
                     {
-                        ulong lineCount = lineCounter.CountLinesInFile(file);
+                        int lineCount = lineCounter.CountLinesInFile(file);
                         totalLines += lineCount;
                         grid.AddRow(new string[] { lineCount.ToString(), new TextPath(file).ToString()!});
                     }
