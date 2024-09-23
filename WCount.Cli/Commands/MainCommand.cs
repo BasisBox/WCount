@@ -28,7 +28,6 @@ using Spectre.Console.Cli;
 using WCount.Cli.Localizations;
 
 using WCount.Library;
-using WCount.Library.Extensions;
 
 namespace WCount.Cli.Commands;
 
@@ -203,7 +202,7 @@ public class MainCommand : Command<MainCommand.Settings>
                     
                     foreach (string file in settings.Files!)
                     {
-                        grid.AddRow(new string[] { lineCounter.CountLinesInFile(file).ToString(), file.CountWords().ToString(), charCounter.CountCharactersInFile(file).ToString(), file});
+                        grid.AddRow(new string[] { lineCounter.CountLinesInFile(file).ToString(), wordCounter.CountWordsInFile(file).ToString(), charCounter.CountCharactersInFile(file).ToString(), file});
                     }
 
                     grid.AddRow(new string[] { totalLineCount.ToString(), totalWordCount.ToString(), totalCharCount.ToString(), Resources.App_Total_Label});
