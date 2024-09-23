@@ -32,7 +32,7 @@ public class LineCounter : ILineCounter
     /// <param name="filePath">The file path of the file to be searched.</param>
     /// <returns>the number of lines in a file.</returns>
     /// <exception cref="FileNotFoundException">Thrown if the file could not be located.</exception>
-    public ulong CountLinesInFile(string filePath)
+    public int CountLinesInFile(string filePath)
     {
         if (File.Exists(filePath))
         {
@@ -49,9 +49,9 @@ public class LineCounter : ILineCounter
     /// </summary>
     /// <param name="s">The string to be searched.</param>
     /// <returns>the number of lines in a string.</returns>
-    public ulong CountLines(string s)
+    public int CountLines(string s)
     {
-        ulong totalCount = 0;
+        int totalCount = 0;
         
         foreach (char c in s)
         {
@@ -69,9 +69,9 @@ public class LineCounter : ILineCounter
     /// </summary>
     /// <param name="enumerable">The IEnumerable to be searched.</param>
     /// <returns>the number of lines in the specified IEnumerable.</returns>
-    public ulong CountLines(IEnumerable<string> enumerable)
+    public int CountLines(IEnumerable<string> enumerable)
     {
-        ulong totalCount = 0;
+        int totalCount = 0;
         
         foreach (string s in enumerable)
         {

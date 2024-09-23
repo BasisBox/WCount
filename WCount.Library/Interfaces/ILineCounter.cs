@@ -21,10 +21,10 @@ namespace WCount.Library.Interfaces;
 
 public interface ILineCounter
 {
-    public ulong CountLinesInFile(string filePath);
+    public int CountLinesInFile(string filePath);
 
-    public ulong CountLines(string s);
+    public int CountLines(string s);
 
-    public ulong CountLines(IEnumerable<string> enumerable);
+    public int CountLines(IEnumerable<string> enumerable);
 
 }

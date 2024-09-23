@@ -185,7 +185,7 @@ public class MainCommand : Command<MainCommand.Settings>
                     CharCounter charCounter = new CharCounter();
                     LineCounter lineCounter = new LineCounter();
                     
-                    ulong totalLineCount = 0;
+                    int totalLineCount = 0;
                     ulong totalWordCount = 0;
                     ulong totalCharCount = 0;
 
