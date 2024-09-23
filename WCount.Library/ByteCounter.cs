@@ -54,10 +54,6 @@ public class ByteCounter : IByteCounter
         {
             bytes = Encoding.UTF8.GetBytes(s);
         }
-        else if (Equals(textEncodingType, Encoding.UTF7))
-        {
-            throw new NotSupportedException(Resources.Exceptions_UTF7NotSupported);
-        }
         else if (Equals(textEncodingType, Encoding.ASCII))
         {
             bytes = Encoding.ASCII.GetBytes(s);
