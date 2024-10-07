@@ -15,10 +15,6 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-using System.Reflection;
-
-using AlastairLundy.Extensions.System;
-
 using Spectre.Console.Cli;
 
 using WCount.Cli.Commands;
@@ -33,8 +29,8 @@ app.Configure(config =>
         .WithExample("/path/to/example.txt")
         .WithExample("-l /path/to/foo.txt")
         .WithExample("/Path/To/foo.txt", "/Path/To/bar.txt");
-    
-    config.SetApplicationVersion(Assembly.GetExecutingAssembly().GetName().Version.ToFriendlyVersionString());
+
+    config.UseAssemblyInformationalVersion();
 });
 
 app.SetDefaultCommand<MainCommand>();

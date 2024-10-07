@@ -14,6 +14,7 @@ No guarantee of support is provided and updates containing fixes are to be made 
 
 | Version | Supported with Bug Fixes | Supported with Security Fixes |
 | ------- | ------------------ |-------------------------------------|
+| 2.0    | :white_check_mark: |  :white_check_mark:                 |
 
 ### WCount Library
 
